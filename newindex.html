@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cia Prosperar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Font --> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <style>
+        body {
+          position: relative; 
+        }
+        
+        *{ font-family: 'Khula', sans-serif;}
+        .thumbnail{ background-color: transparent; border: 0px}
+        #quem {padding-top:50px;padding-bottom: 50px;color: white; background-color: #000000;}
+        #cursos {padding-top:50px;padding-bottom: 50px;color: black; background-color: white;}
+        
+        /* responsive background image to espaco section */
+        @media (min-width: 50px) {
+            #espaco {padding-top:50px; padding-bottom: 50px; height: 500px; color: black; background-color: white; background-image: url("img/espaco/criancas3.png"); background-size:  100% 100%; background-repeat: no-repeat}    
+        }
+        
+        @media (min-width: 775px){
+            #espaco {padding-top:50px; height: 880px; color: black; background-color: white; background-image: url("img/espaco/criancas3.png"); background-size:  100% auto; background-repeat: no-repeat}    
+        }
+        
+        @media (min-width: 775px){
+            #produtos {padding-top:50px; height: auto; color: black; background-color: white; background-size:  100% auto;}    
+        }
+        
+        /* #produtos {padding-top:50px;height:500px;color: black; background-color: white;} */
+        #cozinha {padding-top:50px;height:500px;color: black; background-color: lightgray;}
+        #equipe {padding-top:50px;height:900px;color: black; background-color: white; background-image: url("img/equipe/colaboradores.jpg"); background-size:  100% 100%; background-repeat: no-repeat}
+        #fotos {padding-top:50px;height:500px;color: black; background-color: white;}
+        #patrocinadores {padding-top:50px;height:500px;color: black; background-color: white;}
+        #cadastro {padding-top:50px;height:500px;color: black; background-color: white;}
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">CIA Prosperar</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="#quem">Quem Somos</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#espaco">Espaço Cultural</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#cozinha">Cozinha do Bem</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#fotos">Fotos</a></li>
+            <li><a href="#patrocinadores">Patrocinadores</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#cadastro">Cadastre-se</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="quem" class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1"></div>
+        <div class="col-md-10 col-xs-10 text-center">
+            <h1>Quem Somos</h1>
+            <div class="row">
+                <div class="col-md-2 col-xs-2">
+                </div>
+                <div class="col-md-8 col-xs-8 text-center">
+                    <image class="img-responsive" src="img/quem/logo_cia.jpg"></image>
+                    <h3>Somos um grupo de pessoas que buscam proprorcionar melhorias na vida de jovens carentes, através de cursos profissionalizantes gratuitos. Com apenas uma taxa simbólica de inscrição os beneficiados podem aprender um ofício, além de serem estimulados a crescer intelectualmente e socialmente.</h3>
+                </div>
+                <div class="col-md-2 col-xs-2">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1 col-xs-1"></div>
+    </div>
+</div>
+<div id="cursos" class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1"></div>
+        <div class="col-md-10 col-xs-10 content-box text-center">
+            <h1>Cursos</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-xs-4">
+                        <div class="thumbnail">
+                            <image class="img-responsive img-rounded" src="img/cursos/informatica.jpg"></image>
+                        </div>
+                        <div class="caption">
+                            <p>Informática</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <div class="thumbnail">
+                            <image class="img-responsive img-rounded" src="img/cursos/feijoada.jpg"></image>
+                        </div>
+                        <div class="caption">
+                            <p>Culinária</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <div class="thumbnail">
+                            <image class="img-responsive img-rounded" src="img/cursos/corte_costura.jpg"></image>
+                        </div>
+                        <div class="caption">
+                            <p>Corte e costura</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-4">
+                        <div class="thumbnail">
+                            <image class="img-responsive img-rounded" src="img/cursos/boneca.jpg"></image>
+                        </div>
+                        <div class="caption">
+                            <p>Boneca de pano</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <div class="thumbnail">
+                            <image class="img-responsive img-rounded" src="img/cursos/canto.jpeg"></image>
+                        </div>
+                        <div class="caption">
+                            <p>Música e canto.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <div class="thumbnail">
+                            <image class="img-responsive img-rounded" src="img/cursos/empreendedorismo.jpg"></image>
+                        </div>
+                        <div class="caption">
+                            <p>Empreendedorismo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1 col-xs-1"></div>
+    </div>
+</div>
+<div id="espaco" class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1"></div>
+        <div class="col-md-10 col-xs-10 content-box text-center">
+            <h1>Espaço Cultural</h1>
+            <div style="padding-top:320px;"></div>
+            <h3 style="background-color:trasnparent;color:white">Local reservado para a prática cultural, onde crianças e jovens terão contato com boa literatura e a prática do karatê, ajudando a formar cidadãos sádios, conscientes  e críticos do mundo em sua volta.</h3>
+        </div>
+        <div class="col-md-1 col-xs-1"></div>
+    </div>
+</div>
+<div id="produtos" class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1"></div>
+        <div class="col-md-10 col-xs-10 content-box text-center">
+            <h1>Produtos</h1>
+            <h3>Para mantermos este lindo projeto, produzimos e comercializamos, por via de venda programada, produtos para o lar e de uso pessoal</h3>
+            <!-- Linha de produtos - 0 -->
+            <div class="row">
+                <div class="col-md-1 col-xs-1"></div>
+                <div class="col-md-3 col-xs-3">
+                    <div class="thumbnail">
+                        <image id="foto1" src="img/produtos/foto_001.jpg" class="img-responsive img-rounded" data-toggle="modal" data-target="#productModal"></image>
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-1"></div>
+                <div class="col-md-2 col-xs-2">
+                    <div class="thumbnail">
+                        <image id="foto2" src="img/produtos/foto_002.jpg" class="img-responsive img-rounded"  data-toggle="modal" data-target="#productModal"></image>
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-1"></div>
+                <div class="col-md-3 col-xs-3">
+                    <div class="thumbnail">
+                        <image id="foto3" src="img/produtos/foto_003.jpg"  class="img-responsive img-rounded" data-toggle="modal" data-target="#productModal"></image>
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-1"></div>
+            </div>
+            
+            <!-- Linha de produtos - 1 -->
+            <div class="row">
+                <div class="col-md-2 col-xs-2"></div>
+                <div class="col-md-3 col-xs-3">
+                    <div class="thumbnail">
+                        <image id="foto4" src="img/produtos/foto_004.jpg" class="img-responsive img-rounded" data-toggle="modal" data-target="#productModal"></image>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-2"></div>
+                <div class="col-md-3 col-xs-3">
+                    <div class="thumbnail">
+                        <image id="foto5" src="img/produtos/foto_005.jpg" class="img-responsive img-rounded"  data-toggle="modal" data-target="#productModal"></image>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-2"></div>
+            </div>
+            
+            <!-- Linha de produtos - 2 -->
+            <div class="row">
+                <div class="col-md-4 col-xs-4">
+                <div class="thumbnail">
+                    <image id="foto6" src="img/produtos/foto_006.jpg" class="img-responsive img-rounded" data-toggle="modal" data-target="#productModal"></image>
+                </div>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                <div class="thumbnail">
+                    <image id="foto7" src="img/produtos/foto_007.jpg" class="img-responsive img-rounded"  data-toggle="modal" data-target="#productModal"></image>
+                </div>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                    <div class="thumbnail">
+                        <image id="foto8" src="img/produtos/foto_008.jpg"  class="img-responsive img-rounded" data-toggle="modal" data-target="#productModal"></image>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Linha de produtos - 3 -->
+            <div class="row">
+                <div class="col-md-3 col-xs-3">
+                <div class="thumbnail">
+                    <image id="foto9" src="img/produtos/foto_009.jpg" class="img-responsive img-rounded" data-toggle="modal" data-target="#productModal"></image>
+                </div>
+                </div>
+                <div class="col-md-1 col-xs-1"></div>
+                <div class="col-md-4 col-xs-4">
+                <div class="thumbnail">
+                    <image id="foto10" src="img/produtos/foto_010.jpg" class="img-responsive img-rounded"  data-toggle="modal" data-target="#productModal"></image>
+                </div>
+                </div>
+                <div class="col-md-1 col-xs-1"></div>
+                <div class="col-md-3 col-xs-3">
+                    <div class="thumbnail">
+                        <image id="foto11" src="img/produtos/foto_011.jpg"  class="img-responsive img-rounded" data-toggle="modal" data-target="#productModal"></image>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Linha de produtos - 4 -->
+            <div class="row">
+                <div class="col-md-3 col-xs-3">
+                <div class="thumbnail">
+                    <image id="foto12" src="img/produtos/foto_012.jpeg" class="img-responsive img-rounded" data-toggle="modal" data-target="#productModal"></image>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3">
+                <div class="thumbnail">
+                    <image id="foto13" src="img/produtos/foto_013.jpeg" class="img-responsive img-rounded"  data-toggle="modal" data-target="#productModal"></image>
+                </div>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <div class="thumbnail">
+                        <image id="foto14" src="img/produtos/foto_014.jpeg"  class="img-responsive img-rounded" data-toggle="modal" data-target="#productModal"></image>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <div class="thumbnail">
+                        <image id="foto15" src="img/produtos/foto_015.jpeg" class="img-responsive img-rounded"  data-toggle="modal" data-target="#productModal"></image>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Linha de produtos - 5 -->
+            <div class="row">
+                <div class="col-md-3 col-xs-3">
+                <div class="thumbnail">
+                    <image id="foto16" src="img/produtos/foto_016.jpeg" class="img-responsive img-rounded" data-toggle="modal" data-target="#productModal"></image>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3">
+                <div class="thumbnail">
+                    <image id="foto17" src="img/produtos/foto_017.jpeg" class="img-responsive img-rounded"  data-toggle="modal" data-target="#productModal"></image>
+                </div>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <div class="thumbnail">
+                        <image id="foto18" src="img/produtos/foto_018.jpeg"  class="img-responsive img-rounded" data-toggle="modal" data-target="#productModal"></image>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <div class="thumbnail">
+                        <image id="foto19" src="img/produtos/foto_019.jpeg" class="img-responsive img-rounded"  data-toggle="modal" data-target="#productModal"></image>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <image id="#imagepreview" class="modalImage" src="" style="width: 500px; height: 500px;" ></image>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-1 col-xs-1"></div>
+    </div>
+</div>
+<div id="cozinha" class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1"></div>
+        <div class="col-md-10 col-xs-10 content-box text-center">
+            <h1>Cozinha do Bem</h1>
+        </div>
+        <div class="col-md-1 col-xs-1"></div>
+    </div>
+</div>
+<div id="equipe" class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1"></div>
+        <div class="col-md-10 col-xs-10 content-box text-center">
+            <h1>Equipe</h1>
+        </div>
+        <div class="col-md-1 col-xs-1"></div>
+    </div>
+</div>
+<div id="fotos" class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1"></div>
+        <div class="col-md-10 col-xs-10 content-box text-center">
+            <h1>Fotos</h1>
+        </div>
+        <div class="col-md-1 col-xs-1"></div>
+    </div>
+</div>
+<div id="patrocinadores" class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1"></div>
+        <div class="col-md-10 col-xs-10 content-box text-center">
+            <h1>Patrocinadores</h1>
+        </div>
+        <div class="col-md-1 col-xs-1"></div>
+    </div>
+  
+</div>
+<div id="cadastro" class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1"></div>
+        <div class="col-md-10 col-xs-10 content-box text-center">
+            <h1>Cadastro</h1>
+        </div>
+        <div class="col-md-1 col-xs-1"></div>
+    </div>
+</div>
+    <script>
+        $('#productModal').on('show.bs.modal', function (event) {
+            var img = $(event.relatedTarget)
+            var modal = $(this)
+            modal.find('.modalImage').attr('src', $(img).attr('src'))
+        })
+    </script>
+    
+</body>
+</html>
