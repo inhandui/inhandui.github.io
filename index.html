@@ -11,19 +11,19 @@
           /* Extra small devices (phones, less than 768px) */
           @media (max-width: 768px) {
                .presentation-backgroud{
-                    z-index: 10;
-                    padding: -40px;
-                    position: relative;
+                   position: relative;
+                   z-index: 10;
+                   padding: -40px;
                 }
 
                 .presentation-foreground{
+                    position: relative;
                     z-index: 20;
                     margin-top: -47%;
                     margin-left: auto;
                     margin-right: auto;
                     width: 20%;
                     height: 20%;
-                    position: relative;
                 }
 
                 .presentation-text{
@@ -44,19 +44,21 @@
           /* Small devices (tablets, 768px and up) */
           @media (min-width: 768px) and (max-width: 992px) {
               .presentation-backgroud{
-                    z-index: 10;
-                    padding: -40px;
-                    position: relative;
-                }
-
-                .presentation-foreground{
-                    z-index: 20;
-                    margin-top: -47%;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 20%;
-                    height: 20%;
-                    position: relative;
+                  position: relative;
+                  z-index: 10;
+                  padding: -40px;
+                  position: relative;
+              }
+              
+              .presentation-foreground{
+                  position: relative;
+                  z-index: 20;
+                  margin-top: -47%;
+                  margin-left: auto;
+                  margin-right: auto;
+                  width: 20%;
+                  height: 20%;
+                  position: relative;
                 }
 
                 .presentation-text{
@@ -111,53 +113,86 @@
           /* Large devices (large desktops, 1200px and up) */
           @media (min-width: 1200px) {
               .presentation-backgroud{
-                    z-index: 10;
-                    padding: -40px;
-                    position: relative;
+                  position: relative;  
+                  z-index: 10;
+                  padding: -40px;
+              }
+              
+              .presentation-foreground{
+                  position: relative;
+                  z-index: 20;
+                  margin-top: -47%;
+                  margin-left: auto;
+                  margin-right: auto;
+                  width: 20%;
+                  height: 20%;  
                 }
-
-                .presentation-foreground{
-                    z-index: 20;
-                    margin-top: -47%;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 20%;
-                    height: 20%;
-                    position: relative;
-                }
-
-                .presentation-text{
-                    z-index: 90;
-                    color: white;
-                    background-color: white;
-                    margin-top: -24%;
-                }
-
-                h1 {
-                    z-index: 90;
-                    color: black;
-                    background-color: gray;
-                    opacity: 0.6;
-                }
+              
+              .presentation-text{
+                  position: relative;
+                  z-index: 30;
+                  color: white;
+                  margin-top: -20%;
+              }
+              
+              .portfolio-title{
+                  position: relative;
+                  color: white;
+                  padding-top: 2%;
+              }
+              
+              .portfolio-content{
+                  position: relative;
+                  color: white;
+                  padding-top: 2%;
+              }
+              
+              .portfolio-background{
+                  background-color: gray;
+              }
           }
       </style>
   </head>
   <body>
-      <img class="presentation-background img-fluid" src="https://scontent.fnat1-1.fna.fbcdn.net/v/t31.0-8/22137318_1466382200112239_9000342499339945141_o.jpg?oh=9ebbe3b48b384caf17cecf4edbea3b36&oe=5A966BC0">
-      
-      <div class="presentation-foreground text-center">
-          <img class="img-thumbnail rounded-circle" src="https://scontent.fnat1-1.fna.fbcdn.net/v/t1.0-9/20108130_1401021089981684_4236980710394203881_n.jpg?oh=9a819a94ece1daad71b9acfb5d9fe81c&oe=5AA646DC">
+      <div class="container-fluid page-background">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <img class="presentation-background img-fluid" src="https://scontent.fnat1-1.fna.fbcdn.net/v/t31.0-8/22137318_1466382200112239_9000342499339945141_o.jpg?oh=9ebbe3b48b384caf17cecf4edbea3b36&oe=5A966BC0">
+              </div>
+          </div>
+          <div class="row">
+              <div class="presentation-foreground text-center">
+                  <img class="img-thumbnail rounded-circle" src="https://scontent.fnat1-1.fna.fbcdn.net/v/t1.0-9/20108130_1401021089981684_4236980710394203881_n.jpg?oh=9a819a94ece1daad71b9acfb5d9fe81c&oe=5AA646DC">
+              </div>
+          </div>
+          <div class="row">
+              <div class="presentation-text col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center"> 
+                  <h3>Building Dreams Systems</h3>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="text-center">Portfolio</h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="portfolio-content col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                  <img class="img-thumbnail rounded" src="https://www.technewscentral.com/wp-content/uploads/2016/06/best-laptop-for-developers.jpg">
+              </div>
+              <div class="portfolio-content col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+              <div class="portfolio-content col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                  <img class="img-thumbnail rounded" src="https://www.technewscentral.com/wp-content/uploads/2016/06/best-laptop-for-developers.jpg">
+              </div>
+          </div>
+          <div class="row">
+              <div class="portfolio-content col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                  <img class="img-thumbnail rounded" src="https://www.technewscentral.com/wp-content/uploads/2016/06/best-laptop-for-developers.jpg">
+              </div>
+              <div class="portfolio-content col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+              <div class="portfolio-content col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                  <img class="img-thumbnail rounded" src="https://www.technewscentral.com/wp-content/uploads/2016/06/best-laptop-for-developers.jpg">
+              </div>
+          </div>
       </div>
-      
-      <!--
-      <div class="presentation-foreground text-center">
-          <img class="img-thumbnail rounded-circle w-25 h-35" src="https://scontent.fnat1-1.fna.fbcdn.net/v/t1.0-9/20108130_1401021089981684_4236980710394203881_n.jpg?oh=9a819a94ece1daad71b9acfb5d9fe81c&oe=5AA646DC">
-      </div>
-      
-      <h3 class="presentation-text">Building Dreams Systems</h3>
-      <h1>Portfolio</h1>
-      <img src="https://www.technewscentral.com/wp-content/uploads/2016/06/best-laptop-for-developers.jpg" class="img-responsive rounded">
-      <img class="img-responsive rounded" src="https://www.technewscentral.com/wp-content/uploads/2016/06/best-laptop-for-developers.jpg">
-        -->
   </body>
 </html>
